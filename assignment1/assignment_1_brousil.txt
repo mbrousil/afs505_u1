@@ -1,0 +1,1483 @@
+# Matt Brousil assignment 1 AFS 505
+# Using Git Bash on Windows
+
+# 55.3.1
+pwd
+/c/Users/matthew.brousil/Documents
+
+# 55.3.3
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+# 55.4.1
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ pwd
+/c/Users/matthew.brousil/Documents
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ cd ~
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ pwd
+/c/Users/matthew.brousil
+
+# 55.5.1
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ pwd
+/c/Users/matthew.brousil
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir temp/stuff
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir temp/stuff/things
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir -p temp/stuff/things/orange/apple/pear/grape
+
+# 55.5.3
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ ls
+'3D Objects'/
+ Anaconda3/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ ntuser.pol
+ ODBA/
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+ Roaming/
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ temp/
+ Templates@
+ Videos/
+ Zotero/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir temp/1
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir temp/1/2
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir temp 1/2/3/
+mkdir: cannot create directory ‘temp’: File exists
+mkdir: cannot create directory ‘1/2/3/’: No such file or directory
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir temp/1/2/3/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir temp/1/2/3/4
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir temp/1/2/3/4/5
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir temp/6
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir temp/6/7
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir temp/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20
+mkdir: cannot create directory ‘temp/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20’: No such file or directory
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir -p temp/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ mkdir "temp/I Have Fun"
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ ls temp                                                                            1/   6/  'I Have Fun'/   stuff/
+
+# 55.6.1
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd temp
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd ../
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd stuff
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff
+$ pwd
+/c/Users/matthew.brousil/temp/stuff
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff
+$ cd things
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things
+$ pwd
+/c/Users/matthew.brousil/temp/stuff/things
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things
+$ cd orange
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange
+$ ls
+apple/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange
+$ pwd
+/c/Users/matthew.brousil/temp/stuff/things/orange
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange
+$ cd apple
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple
+$ pwd
+/c/Users/matthew.brousil/temp/stuff/things/orange/apple
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple
+$ cd pear
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear
+$ pwd
+/c/Users/matthew.brousil/temp/stuff/things/orange/apple/pear
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear
+$ cd grape
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear/grape
+$ pwd
+/c/Users/matthew.brousil/temp/stuff/things/orange/apple/pear/grape
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear/grape
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple
+$ pwd
+/c/Users/matthew.brousil/temp/stuff/things/orange/apple
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things
+$ pwd
+/c/Users/matthew.brousil/temp/stuff/things
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things
+$ cd ../../..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ pwd
+/c/Users/matthew.brousil
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd temp/stuff/things/orange/apple/pear/grape/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear/grape
+$ pwd
+/c/Users/matthew.brousil/temp/stuff/things/orange/apple/pear/grape
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear/grape
+$ cd ../../../../../../
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ pwd
+/c/Users/matthew.brousil/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd ../
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ pwd
+/c/Users/matthew.brousil
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ pwd
+/c/Users/matthew.brousil/temp
+
+# 55.6.3
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd temp/stuff/things/orange/apple/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple
+$ cd ../../../..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd ~
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd Documents/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ cd ../Downloads/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Downloads
+$ cd ../Documents/Codling-Moth/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/Codling-Moth
+$ pwd
+/c/Users/matthew.brousil/Documents/Codling-Moth
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/Codling-Moth
+$ cd "~/temp/I Have Fun"
+bash: cd: ~/temp/I Have Fun: No such file or directory
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/Codling-Moth
+$ ls ~/temp
+ 1/   6/  'I Have Fun'/   stuff/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/Codling-Moth
+$ cd ~/temp/"I Have Fun"
+
+# 55.7.1
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/I Have Fun
+$ cd ~
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ pwd
+/c/Users/matthew.brousil
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+ 1/   6/  'I Have Fun'/   stuff/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd stuff
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff
+$ ls
+things/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff
+$ cd things
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things
+$ ls
+orange/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things
+$ cd orange
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange
+$ ls
+apple/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange
+$ cd apple
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple
+$ ls
+pear/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple
+$ cd pear
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear
+$ ls
+grape/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear
+$ cd grape
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear/grape
+$ ls
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear/grape
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear
+$ ls
+grape/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear
+$ cd ../../..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things
+$ ls
+orange/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things
+$ cd ../../
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+ 1/   6/  'I Have Fun'/   stuff/
+
+# 55.7.3
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls -lR                                                                            .:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:53  1/
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:54  6/
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:58 'I Have Fun'/
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:51  stuff/
+
+./1:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:53 2/
+
+./1/2:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:53 3/
+
+./1/2/3:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:53 4/
+
+./1/2/3/4:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:53 5/
+
+./1/2/3/4/5:
+total 0
+
+./6:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 7/
+
+./6/7:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 8/
+
+./6/7/8:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 9/
+
+./6/7/8/9:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 10/
+
+./6/7/8/9/10:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 11/
+
+./6/7/8/9/10/11:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 12/
+
+./6/7/8/9/10/11/12:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 13/
+
+./6/7/8/9/10/11/12/13:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 14/
+
+./6/7/8/9/10/11/12/13/14:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 15/
+
+./6/7/8/9/10/11/12/13/14/15:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 16/
+
+./6/7/8/9/10/11/12/13/14/15/16:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 17/
+
+./6/7/8/9/10/11/12/13/14/15/16/17:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 18/
+
+./6/7/8/9/10/11/12/13/14/15/16/17/18:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 19/
+
+./6/7/8/9/10/11/12/13/14/15/16/17/18/19:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:56 20/
+
+./6/7/8/9/10/11/12/13/14/15/16/17/18/19/20:
+total 0
+
+'./I Have Fun':
+total 0
+
+./stuff:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:51 things/
+
+./stuff/things:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:51 orange/
+
+./stuff/things/orange:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:51 apple/
+
+./stuff/things/orange/apple:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:51 pear/
+
+./stuff/things/orange/apple/pear:
+total 0
+drwxr-xr-x 1 matthew.brousil 1049089 0 Jan 15 17:51 grape/
+
+./stuff/things/orange/apple/pear/grape:
+total 0
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd ~/Documents/bee_ppcp                                                           bash: cd: /c/Users/matthew.brousil/Documents/bee_ppcp: No such file or directory
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd ~/Documents/bee-ppcp/
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/bee-ppcp (master)
+$ ls
+data/  documents/  figures/  scripts/
+
+# 55.8.1
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/bee-ppcp (master)
+$ cd ~
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ pwd
+/c/Users/matthew.brousil
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ s
+bash: s: command not found
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+ 1/   6/  'I Have Fun'/   stuff/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd stuff/things/orange/apple/pear/grape/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear/grape
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear
+$ rmdir grape
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple/pear
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple
+$ rmdir pear
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange/apple
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange
+$ ls
+apple/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange
+$ rmdir apple
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things/orange
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things
+$ ls
+orange/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things
+$ rmdir orange
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff/things
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff
+$ ls
+things/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff
+$ rmdir things
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/stuff
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+ 1/   6/  'I Have Fun'/   stuff/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ rmdir stuff
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ pwd
+/c/Users/matthew.brousil/temp
+
+# 55.8.3
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ rmdir 1
+rmdir: failed to remove '1': Directory not empty
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd 1/2/3/4/5/
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/1/2/3/4/5
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/1/2/3/4
+$ rm 5
+rm: cannot remove '5': Is a directory
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/1/2/3/4
+$ rmdir 5
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/1/2/3/4
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/1/2/3
+$ rmdir 4
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/1/2/3
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/1/2
+$ rmdir 3
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/1/2
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/1
+$ rmdir 2
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/1
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ rmdir 1
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+ 6/  'I Have Fun'/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd 6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13/14/15/16/17/18/19
+$ rmdir 20
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13/14/15/16/17/18/19
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13/14/15/16/17/18
+$ rmdir 19
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13/14/15/16/17/18
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13/14/15/16/17
+$ rmdir 18
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13/14/15/16/17
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13/14/15/16
+$ rmdir 17
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13/14/15/16
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13/14/15
+$ rmdir 16
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13/14/15
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13/14
+$ rmdir 15
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13/14
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13
+$ rmdir 14
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12/13
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12
+$ rmdir 13
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11/12
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11
+$ rmdir 12
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10/11
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10
+$ rmdir 11
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9/10
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9
+$ rmdir 10
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8/9
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8
+$ rmdir 9
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7/8
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7
+$ rmdir 8
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6/7
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6
+$ rmdir 7
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/6
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ rmdir 6
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+'I Have Fun'/
+
+# 55.9.1
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd ~
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ pwd
+/c/Users/matthew.brousil
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ mkdir -p i/like/icecream
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ pushd i/like/icecream/
+~/temp/i/like/icecream ~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/i/like/icecream
+$ popd
+~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ pwd
+/c/Users/matthew.brousil/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ pushd i/like/
+~/temp/i/like ~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/i/like
+$ pwd
+/c/Users/matthew.brousil/temp/i/like
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/i/like
+$ pushd icecream/
+~/temp/i/like/icecream ~/temp/i/like ~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/i/like/icecream
+$ pwd
+/c/Users/matthew.brousil/temp/i/like/icecream
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/i/like/icecream
+$ popd
+~/temp/i/like ~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/i/like
+$ pwd
+/c/Users/matthew.brousil/temp/i/like
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/i/like
+$ popd
+~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ pushd i/like/icecream/
+~/temp/i/like/icecream ~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/i/like/icecream
+$ pushd
+~/temp ~/temp/i/like/icecream
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ pwd
+/c/Users/matthew.brousil/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ pushd
+~/temp/i/like/icecream ~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/i/like/icecream
+$ pwd
+/c/Users/matthew.brousil/temp/i/like/icecream
+
+# 55.9.3
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/i/like/icecream
+$ pushd ~/Documents/bee-ppcp/
+~/Documents/bee-ppcp ~/temp/i/like/icecream ~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/bee-ppcp (master)
+$ pwd
+/c/Users/matthew.brousil/Documents/bee-ppcp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/bee-ppcp (master)
+$ popd
+~/temp/i/like/icecream ~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/i/like/icecream
+$ cd ~
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ pushd Documents/NPS-FCA/
+~/Documents/NPS-FCA ~ ~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/NPS-FCA (master)
+$ popd
+~ ~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+ i/  'I Have Fun'/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ rmdir i/like/icecream/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ rmdir i/like/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ rmdir i
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ mkdir snow/day/plz
+mkdir: cannot create directory ‘snow/day/plz’: No such file or directory
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ mkdir-p  snow/day/plz
+bash: mkdir-p: command not found
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ mkdir -p snow/day/plz
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ pushd snow/day/plz/
+~/temp/snow/day/plz ~/temp ~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp/snow/day/plz
+$ popd
+~/temp ~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ pushd
+~/temp ~/temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ popd
+~/temp
+
+# 55.10.1
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd ~
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ pwd
+/c/Users/matthew.brousil
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ touch iamcool.txt
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+'I Have Fun'/   iamcool.txt   snow/
+
+# 55.10.3
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ mkdir snow/day/plz/tomorrow
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ touch snow/day/plz/tomorrow/imbeggingyou.txt
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd ..
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ rmdir temp/snow/day/plz/tomorrow/
+rmdir: failed to remove 'temp/snow/day/plz/tomorrow/': Directory not empty
+
+# 55.11.1
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd ~
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ wd
+bash: wd: command not found
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ pwd                                                                               /c/Users/matthew.brousil
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cp iamcool.txt neat.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+'I Have Fun'/   iamcool.txt   neat.txt   snow/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cp neat.txt awesome.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+ awesome.txt  'I Have Fun'/   iamcool.txt   neat.txt   snow/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cp awesome.txt thefourthfile.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+ awesome.txt  'I Have Fun'/   iamcool.txt   neat.txt   snow/   thefourthfile.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ mkdir something
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cp awesome.txt something
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+ awesome.txt    iamcool.txt   snow/        thefourthfile.txt
+'I Have Fun'/   neat.txt      something/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls something
+awesome.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cp -r something newplace
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+ awesome.txt    iamcool.txt   newplace/   something/
+'I Have Fun'/   neat.txt      snow/       thefourthfile.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls newplace
+awesome.txt
+
+# 55.11.3
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls                                                                                 awesome.txt    iamcool.txt   newplace/   something/
+'I Have Fun'/   neat.txt      snow/       thefourthfile.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cp -r snow test
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls test
+day/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cp iamcool.txt ~
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls ~
+'3D Objects'/
+ Anaconda3/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ iamcool.txt
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ ntuser.pol
+ ODBA/
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+ Roaming/
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ temp/
+ Templates@
+ Videos/
+ Zotero/
+
+ # 55.12.1
+ matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cd ~
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ pwd
+/c/Users/matthew.brousil
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~
+$ cd temp
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ mv awesome.txt uncool.txt
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+'I Have Fun'/   neat.txt    snow/        test/               uncool.txt
+ iamcool.txt    newplace/   something/   thefourthfile.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ mv newplace oldplace
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+'I Have Fun'/   neat.txt    snow/        test/               uncool.txt
+ iamcool.txt    oldplace/   something/   thefourthfile.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ mv oldplace newplace
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+'I Have Fun'/   neat.txt    snow/        test/               uncool.txt
+ iamcool.txt    newplace/   something/   thefourthfile.txt
+
+ # 55.12.3
+ matthew.brousil@wrc-pccr-05 MINGW64 ~
+ $ cd ~
+
+ matthew.brousil@wrc-pccr-05 MINGW64 ~
+ $ pwd                                                                               /c/Users/matthew.brousil
+
+ matthew.brousil@wrc-pccr-05 MINGW64 ~
+ $ mv temp/newplace/a_file.txt temp/oldplace/a_file.txt                              mv: cannot move 'temp/newplace/a_file.txt' to 'temp/oldplace/a_file.txt': No such file or directory
+
+ matthew.brousil@wrc-pccr-05 MINGW64 ~
+ $ mv temp/newplace/a_file.txt temp/oldplace/                                        mv: cannot move 'temp/newplace/a_file.txt' to 'temp/oldplace/': No such file or directory
+
+ matthew.brousil@wrc-pccr-05 MINGW64 ~
+ $ mv temp/newplace/a_file.txt temp/
+ I Have Fun/        newplace/          test/
+ iamcool.txt        snow/              thefourthfile.txt
+ neat.txt           something/         uncool.txt
+
+ matthew.brousil@wrc-pccr-05 MINGW64 ~
+ $ mv temp/newplace/a_file.txt temp/something/a_file.txt
+
+ matthew.brousil@wrc-pccr-05 MINGW64 ~
+ $ ls temp/newplace/
+ awesome.txt
+
+ matthew.brousil@wrc-pccr-05 MINGW64 ~
+ $ mv temp/something/a_file.txt temp/newplace/a_file.txt
+
+ matthew.brousil@wrc-pccr-05 MINGW64 ~
+ $ ls temp/something
+ awesome.txt
+
+ matthew.brousil@wrc-pccr-05 MINGW64 ~
+ $ ls temp/newplace
+ a_file.txt  awesome.txt
+
+ # 55.13.1
+ matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ nano Desktop/test.txt                                                                                                                                                 matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ cp Desktop/test.txt temp                                                                                                                                              matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ ls temp                                                                           'I Have Fun'/   neat.txt    snow/        test/      thefourthfile.txt                iamcool.txt    newplace/   something/   test.txt   uncool.txt                                                                                                          matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ nano test.txt                                                                                                                                                         matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ nano Desktop/test.txt                                                                                                                                                 matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ cp Desktop/test.txt temp/test.txt                                                                                                                                     matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ rm test/test.txt                                                                  rm: cannot remove 'test/test.txt': No such file or directory                                                                                                            matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ rm temp/test.txt                                                                                                                                                      matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ cp Desktop/test.txt temp                                                                                                                                              matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ nano temp/test.txt                                                                                                                                                    matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ less test.txt                                                                     test.txt: No such file or directory                                                                                                                                     matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ less temp/test.txt
+
+# 55.13.3
+matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ cd temp                                                                                                                                                               matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ ls                                                                                'I Have Fun'/   neat.txt    snow/        test/      thefourthfile.txt                iamcool.txt    newplace/   something/   test.txt   uncool.txt                                                                                                          matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ pwd                                                                               /c/Users/matthew.brousil/temp                                                                                                                                           matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ cp ../Desktop/test.txt temp                                                                                                                                           matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ less test.txt                                                                                                                                                         matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ cp ../Desktop/test.txt .                                                                                                                                              matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ less test.txt                                                                                                                                                         matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ less                                                                              I Have Fun/        newplace/          temp               thefourthfile.txt          iamcool.txt        snow/              test/              uncool.txt                 neat.txt           something/         test.txt                                                                                                                          matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ less neat.txt
+
+
+# 55.14.1
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ cd ~                                                                                                                                                                  matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ pw                                                                                bash: pw: command not found                                                                                                                                             matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ pwd                                                                               /c/Users/matthew.brousil                                                                                                                                                matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ cd temp                                                                                                                                                               matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ less                                                                              I Have Fun/        newplace/          temp               test2                      iamcool.txt        snow/              test/              thefourthfile.txt          neat.txt           something/         test.txt           uncool.txt                                                                                                     matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ less test2.txt
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cat test2.txt
+Here's some stuff
+
+HeRe"s SoMe StUfF
+
+askfja;sd
+asfawejr
+s
+
+
+
+asldjf
+
+werw
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cat test.txt
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+
+# 55.14.3
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ nano tired_of_files.txt                                                                                                                                               matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ nano theres_snow_outside.txt
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cat tired_of_files.txt
+Blaaaaaaaaaaaaaaaaaaaaaah
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cat theres_snow_outside.txt
+Hope we get more today
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cat test.txt test2.txt
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff.
+Here's some stuff
+
+HeRe"s SoMe StUfF
+
+askfja;sd
+asfawejr
+s
+
+
+
+asldjf
+
+werw
+
+# 55.15.1
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ cd ~                                                                                                                                                                  matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ pwd                                                                               /c/Users/matthew.brousil                                                                                                                                                matthew.brousil@wrc-pccr-05 MINGW64 ~                                               $ cd temp                                                                                                                                                               matthew.brousil@wrc-pccr-05 MINGW64 ~/temp                                          $ ls                                                                                'I Have Fun'/   snow/        test.txt                  tired_of_files.txt            iamcool.txt    something/   test2.txt                 uncool.txt                    neat.txt       temp         thefourthfile.txt
+ newplace/      test/        theres_snow_outside.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ rm uncool.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+'I Have Fun'/   snow/        test.txt                  tired_of_files.txt
+ iamcool.txt    something/   test2.txt
+ neat.txt       temp         thefourthfile.txt
+ newplace/      test/        theres_snow_outside.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ rm iamcool.txt neat.txt thefourthfile.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+'I Have Fun'/   snow/        temp    test.txt    theres_snow_outside.txt
+ newplace/      something/   test/   test2.txt   tired_of_files.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ cp -r something newplace
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls newplace/
+a_file.txt  awesome.txt  something/
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls something
+awesome.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ rm something/awesome.txt
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ rmdir something
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ rm -rf newplace
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/temp
+$ ls
+'I Have Fun'/   temp    test.txt    theres_snow_outside.txt
+ snow/          test/   test2.txt   tired_of_files.txt
+
+# 55.15.3
+I did this, but then typed exit and lost it all D:
+e.g.,
+rm -r snow/ # Removed folder and all subdirs/contents
+
+rm *.txt # Removed all text files
+
+# 55.16.1
+exit
+
+# 55.16.3
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ man xargs                                                                                    bash: man: command not found
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ xargs --help
+Usage: xargs [OPTION]... COMMAND [INITIAL-ARGS]...
+Run COMMAND with arguments INITIAL-ARGS and more arguments read from input.
+
+Mandatory and optional arguments to long options are also
+mandatory or optional for the corresponding short option.
+  -0, --null                   items are separated by a null, not whitespace;
+                                 disables quote and backslash processing and
+                                 logical EOF processing
+  -a, --arg-file=FILE          read arguments from FILE, not standard input
+  -d, --delimiter=CHARACTER    items in input stream are separated by CHARACTER,
+                                 not by whitespace; disables quote and backslash
+                                 processing and logical EOF processing
+  -E END                       set logical EOF string; if END occurs as a line
+                                 of input, the rest of the input is ignored
+                                 (ignored if -0 or -d was specified)
+  -e, --eof[=END]              equivalent to -E END if END is specified;
+                                 otherwise, there is no end-of-file string
+  -I R                         same as --replace=R
+  -i, --replace[=R]            replace R in INITIAL-ARGS with names read
+                                 from standard input; if R is unspecified,
+                                 assume {}
+  -L, --max-lines=MAX-LINES    use at most MAX-LINES non-blank input lines per
+                                 command line
+  -l[MAX-LINES]                similar to -L but defaults to at most one non-
+                                 blank input line if MAX-LINES is not specified
+  -n, --max-args=MAX-ARGS      use at most MAX-ARGS arguments per command line
+  -P, --max-procs=MAX-PROCS    run at most MAX-PROCS processes at a time
+  -p, --interactive            prompt before running commands
+      --process-slot-var=VAR   set environment variable VAR in child processes
+  -r, --no-run-if-empty        if there are no arguments, then do not run COMMAND;
+                                 if this option is not given, COMMAND will be
+                                 run at least once
+  -s, --max-chars=MAX-CHARS    limit length of command line to MAX-CHARS
+      --show-limits            show limits on command-line length
+  -t, --verbose                print commands before executing them
+  -x, --exit                   exit if the size (see -s) is exceeded
+      --help                   display this help and exit
+      --version                output version information and exit
+
+Report bugs to <bug-findutils@gnu.org>.
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ sudo --help                                                                                  bash: sudo: command not found
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ chmod --help
+Usage: chmod [OPTION]... MODE[,MODE]... FILE...
+  or:  chmod [OPTION]... OCTAL-MODE FILE...
+  or:  chmod [OPTION]... --reference=RFILE FILE...
+Change the mode of each FILE to MODE.
+With --reference, change the mode of each FILE to that of RFILE.
+
+  -c, --changes          like verbose but report only when a change is made
+  -f, --silent, --quiet  suppress most error messages
+  -v, --verbose          output a diagnostic for every file processed
+      --no-preserve-root  do not treat '/' specially (the default)
+      --preserve-root    fail to operate recursively on '/'
+      --reference=RFILE  use RFILE's mode instead of MODE values
+  -R, --recursive        change files and directories recursively
+      --help     display this help and exit
+      --version  output version information and exit
+
+Each MODE is of the form '[ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+'.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/chmod>
+or available locally via: info '(coreutils) chmod invocation'
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents
+$ chown --help
+Usage: chown [OPTION]... [OWNER][:[GROUP]] FILE...
+  or:  chown [OPTION]... --reference=RFILE FILE...
+Change the owner and/or group of each FILE to OWNER and/or GROUP.
+With --reference, change the owner and group of each FILE to those of RFILE.
+
+  -c, --changes          like verbose but report only when a change is made
+  -f, --silent, --quiet  suppress most error messages
+  -v, --verbose          output a diagnostic for every file processed
+      --dereference      affect the referent of each symbolic link (this is
+                         the default), rather than the symbolic link itself
+  -h, --no-dereference   affect symbolic links instead of any referenced file
+                         (useful only on systems that can change the
+                         ownership of a symlink)
+      --from=CURRENT_OWNER:CURRENT_GROUP
+                         change the owner and/or group of each file only if
+                         its current owner and/or group match those specified
+                         here.  Either may be omitted, in which case a match
+                         is not required for the omitted attribute
+      --no-preserve-root  do not treat '/' specially (the default)
+      --preserve-root    fail to operate recursively on '/'
+      --reference=RFILE  use RFILE's owner and group rather than
+                         specifying OWNER:GROUP values
+  -R, --recursive        operate on files and directories recursively
+
+The following options modify how a hierarchy is traversed when the -R
+option is also specified.  If more than one is specified, only the final
+one takes effect.
+
+  -H                     if a command line argument is a symbolic link
+                         to a directory, traverse it
+  -L                     traverse every symbolic link to a directory
+                         encountered
+  -P                     do not traverse any symbolic links (default)
+
+      --help     display this help and exit
+      --version  output version information and exit
+
+Owner is unchanged if missing.  Group is unchanged if missing, but changed
+to login group if implied by a ':' following a symbolic OWNER.
+OWNER and GROUP may be numeric as well as symbolic.
+
+Examples:
+  chown root /u        Change the owner of /u to "root".
+  chown root:staff /u  Likewise, but also change its group to "staff".
+  chown -hR root /u    Change the owner of /u and subfiles to "root".
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/chown>
+or available locally via: info '(coreutils) chown invocation'
