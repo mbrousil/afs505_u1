@@ -1,0 +1,1193 @@
+# Matthew Brousil Assignment 4 2020-01-29
+
+# Exercises #31-39 (pages 142-179).
+
+# MAKING DECISIONS
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex31.py
+You enter a dark room with two doors.
+Do you go through door #1 or door #2?
+> 1
+There's a giant bear here eating a cheese cake.
+What do you do?
+1. Take the cake.
+2. Scream at the bear.
+> 2
+The bear eats your legs off. Good job!
+
+# Study Drills
+# 1. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex31.py
+You enter a dark room with two doors.
+Do you go through door #1 or door #2?
+> 1
+There's a giant bear here eating a cheese cake.
+What do you do?
+1. Take the cake.
+2. Scream at the bear.
+> Something else
+Well, doing Something else is probably better.
+Bear runs away.
+There's a treasure chest. What do you do?
+1. Open it.
+2. Test it for traps.
+> 2
+You detect a trap, disarm it, and loot a trillion gold.
+Nice.
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat ex31.py                                                                                                           print("""You enter a dark room with two doors.
+Do you go through door #1 or door #2?""")
+
+door = input("> ")
+
+if door == "1":
+    print("There's a giant bear here eating a cheese cake.")
+    print("What do you do?")
+    print("1. Take the cake.")
+    print("2. Scream at the bear.")
+
+    bear = input("> ")
+
+    if bear == "1":
+        print("The bear eats your face off. Good job!")
+    elif bear == "2":
+        print("The bear eats your legs off. Good job!")
+    else:
+        print(f"Well, doing {bear} is probably better.")
+        print("Bear runs away.")
+        print("There's a treasure chest. What do you do?")
+        print("1. Open it.")
+        print("2. Test it for traps.")
+
+        action = input("> ")
+
+        if action == "1":
+            print("It opens a pit in the floor and you fall into an extradimensional void.")
+            print("Forever.")
+        elif action == "2":
+            print("You detect a trap, disarm it, and loot a trillion gold.")
+            print("Nice.")
+        else:
+            print("Didn't consider that option, but let's say it didn't work out.")
+
+elif door == "2":
+    print("You stare into the endless abyss at Cthulhu's retina.")
+    print("1. Blueberries.")
+    print("2. Yellow jacket clothespins.")
+    print("3. Understanding revolvers yelling melodies.")
+
+    insanity = input("> ")
+
+    if insanity == "1" or insanity == "2":
+        print("Your body survives powered by a mind of jello.")
+        print("Good job!")
+
+    else:
+        print("The insanity rots your eyes into a pool of muck.")
+        print("Good job!")
+
+else:
+    print("You stumble around and fall ona knife and die. Good job!")
+
+# 2. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat python ex31_new_game.py                                                                                           cat: python: No such file or directory
+print("Hail and well met!")
+print("What's your name, mortal?")
+
+traveler_name = input("> ")
+
+print(f"Ah, {traveler_name}. A fine title.")
+print("""Are you:
+1. a fighter, or
+2. a mage?""")
+
+vocation = input("< ")
+
+if vocation == "1":
+    print("A fighter eh? You should go lift some weights.")
+    print("""1. Yes
+    2. No""")
+
+    workout = input("> ")
+
+    if workout == "1":
+        print("Great you get stronger!")
+    elif workout == "2":
+        print("Ah, you lose in a fight and die.")
+    else:
+        print("Woah you're the strongest in Letterkenny.")
+
+elif vocation == "2":
+    print("A mage? Sick. Go study your cantrips.")
+    print("""1. Yes
+    2. No""")
+
+    study = input("> ")
+
+    if study == "1":
+        print("You become a crazy good wizard.")
+    elif study == "2":
+        print("A fighter beats you cuz you didn't learn cantrips. You're dead.")
+    else:
+        print("Woah, no one's tried that before. You are the best wizard ever.")
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex31_new_game.py                                                                                               Hail and well met!
+What's your name, mortal?
+> Caso Reeves
+Ah, Caso Reeves. A fine title.
+Are you:
+1. a fighter, or
+2. a mage?
+< 2
+A mage? Sick. Go study your cantrips.
+1. Yes
+    2. No
+> 2
+A fighter beats you cuz you didn't learn cantrips. You're dead.
+
+# LOOPS AND LISTS
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex32.py
+This is count 1
+This is count 2
+This is count 3
+This is count 4
+This is count 5
+A fruit of type: apples
+A fruit of type: oranges
+A fruit of type: pears
+A fruit of type: apricots
+I got 1
+I got pennies
+I got 2
+I got dimes
+I got 3
+I got quarters
+Adding 0 to the list.
+Adding 1 to the list.
+Adding 2 to the list.
+Adding 3 to the list.
+Adding 4 to the list.
+Adding 5 to the list.
+Element was: 0
+Element was: 1
+Element was: 2
+Element was: 3
+Element was: 4
+Element was: 5
+
+# WHILE LOOPS
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex33.py
+At the top i is 0
+Numbers now:  [0]
+At the bottom i is 1
+At the top i is 1
+Numbers now:  [0, 1]
+At the bottom i is 2
+At the top i is 2
+Numbers now:  [0, 1, 2]
+At the bottom i is 3
+At the top i is 3
+Numbers now:  [0, 1, 2, 3]
+At the bottom i is 4
+At the top i is 4
+Numbers now:  [0, 1, 2, 3, 4]
+At the bottom i is 5
+At the top i is 5
+Numbers now:  [0, 1, 2, 3, 4, 5]
+At the bottom i is 6
+The numbers:
+0
+1
+2
+3
+4
+5
+
+# Study Drills
+# 1 & 2. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat ex33.py
+def iteration_function(start, stop):
+
+    i = start
+    numbers = []
+
+    while i < stop:
+        print(f"At the top i is {i}")
+        numbers.append(i)
+
+        i = i + 1
+
+        print("Numbers now: ", numbers)
+        print(f"At the bottom i is {i}")
+
+    print("The numbers: ")
+
+    for num in numbers:
+        print(num)
+
+iteration_function(start = 1, stop = 10)
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex33.py
+At the top i is 1
+Numbers now:  [1]
+At the bottom i is 2
+At the top i is 2
+Numbers now:  [1, 2]
+At the bottom i is 3
+At the top i is 3
+Numbers now:  [1, 2, 3]
+At the bottom i is 4
+At the top i is 4
+Numbers now:  [1, 2, 3, 4]
+At the bottom i is 5
+At the top i is 5
+Numbers now:  [1, 2, 3, 4, 5]
+At the bottom i is 6
+At the top i is 6
+Numbers now:  [1, 2, 3, 4, 5, 6]
+At the bottom i is 7
+At the top i is 7
+Numbers now:  [1, 2, 3, 4, 5, 6, 7]
+At the bottom i is 8
+At the top i is 8
+Numbers now:  [1, 2, 3, 4, 5, 6, 7, 8]
+At the bottom i is 9
+At the top i is 9
+Numbers now:  [1, 2, 3, 4, 5, 6, 7, 8, 9]
+At the bottom i is 10
+The numbers:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+# 3 & 4. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat ex33.py
+def iteration_function(start, stop, increment):
+
+    i = start
+    numbers = []
+
+    while i < stop:
+        print(f"At the top i is {i}")
+        numbers.append(i)
+
+        i = i + increment
+
+        print("Numbers now: ", numbers)
+        print(f"At the bottom i is {i}")
+
+    print("The numbers: ")
+
+    for num in numbers:
+        print(num)
+
+iteration_function(start = 1, stop = 10, increment = 2)
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex33.py
+At the top i is 1
+Numbers now:  [1]
+At the bottom i is 3
+At the top i is 3
+Numbers now:  [1, 3]
+At the bottom i is 5
+At the top i is 5
+Numbers now:  [1, 3, 5]
+At the bottom i is 7
+At the top i is 7
+Numbers now:  [1, 3, 5, 7]
+At the bottom i is 9
+At the top i is 9
+Numbers now:  [1, 3, 5, 7, 9]
+At the bottom i is 11
+The numbers:
+1
+3
+5
+7
+9
+
+# 5. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat ex33.py
+def iteration_function(start, stop, increment):
+
+    i = start
+    numbers = []
+
+    while i < stop:
+        print(f"At the top i is {i}")
+        numbers.append(i)
+
+        i = i + increment
+
+        print("Numbers now: ", numbers)
+        print(f"At the bottom i is {i}")
+
+    print("The numbers: ")
+
+    for num in numbers:
+        print(num)
+
+iteration_function(start = 1, stop = 10, increment = 2)
+
+def loop_iteration_function(start, stop, increment):
+
+    print("This is a new function, which uses a for loop.")
+
+    i = start
+    numbers = []
+
+    for i in range(start, stop, increment):
+        print(i)
+
+loop_iteration_function(start = 1, stop = 10, increment = 2)
+
+def loop_iteration_no_inc(start, stop):
+
+    print("This is a new function, which uses a for loop.")
+
+    i = start
+    numbers = []
+
+    for i in range(start, stop):
+        print(i)
+
+loop_iteration_no_inc(start = 1, stop = 10)
+
+The incrementor isn't needed - it'll default to 1.
+
+# ACCESSING ELEMENTS OF LISTS
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex34.py
+The animal at 1 is the second and is a python3 . 6
+The third animal is at 2 and is a peacock
+The first animal is at 0 and is a bear
+The animal at 3 is the fourth animal and is a kangaroo
+The fifth animal is at 4 and is a whale
+The animal at 2 is the third and is a peacock
+The sixth animal is at 5 and is a platypus
+The animal at 4 is the fifth animal and is a whale
+
+# Study Drills
+# 1. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex34.py
+The animal at 1 is the second and is a python3 . 6
+The third animal is at 2 and is a peacock
+The first animal is at 0 and is a bear
+The animal at 3 is the fourth animal and is a kangaroo
+The fifth animal is at 4 and is a whale
+The animal at 2 is the third and is a peacock
+The sixth animal is at 5 and is a platypus
+The animal at 4 is the fifth animal and is a whale
+The first thing I see is greenhouse
+4
+The last thing I see is doors
+I see the thing at 3, which is doors and also the fourth item.
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat ex34.py
+animals = ['bear' , 'python3 . 6 ', 'peacock' , 'kangaroo ', 'whale ', 'platypus']
+
+print(f"The animal at 1 is the second and is a {animals[1]}")
+print(f"The third animal is at 2 and is a {animals[2]}")
+print(f"The first animal is at 0 and is a {animals[0]}")
+print(f"The animal at 3 is the fourth animal and is a {animals[3]}")
+print(f"The fifth animal is at 4 and is a {animals[4]}")
+print(f"The animal at 2 is the third and is a {animals[2]}")
+print(f"The sixth animal is at 5 and is a {animals[5]}")
+print(f"The animal at 4 is the fifth animal and is a {animals[4]}")
+
+
+
+things_i_see = ["greenhouse", "yard", "building", "doors"]
+
+print(f"The first thing I see is {things_i_see[0]}")
+
+print(len(things_i_see))
+print(f"The last thing I see is {things_i_see[len(things_i_see) - 1]}")
+print(f"I see the thing at 3, which is {things_i_see[3]} and also the fourth item.")
+
+# BRANCHES AND FUNCTIONS
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)      $ python ex35.py                                                                                                     You are in a dark room.
+There is a door to your right and left.
+Which one do you take?
+< left
+There is a bear here.
+The bear has a bunch of honey.
+The fat bear is in front of another door.
+How are you going to move the bear?
+> taunt bear
+The bear has moved from the door.
+You can go through it now.
+> open door
+This room is full of gold. How much do you take?
+> 1000
+You greedy bastard! Good job!
+
+# Study Drills
+# 3. $ cat ex35.py                                                                                                        from sys import exit                                                                                                                                                                                                                      # Finding gold room                                                                                                  def gold_room():                                                                                                         print("This room is full of gold. How much do you take?")                                                                                                                                                                                 # Request input                                                                                                      choice = input("> ")                                                                                                 # If small amounts then be mean                                                                                      if "0" in choice or "1" in choice:                                                                                       how_much = int(choice)                                                                                           else:                                                                                                                    dead("Man, learn to type a number.")                                                                             # If fine amount then, well, fine                                                                                    if how_much < 50:                                                                                                        print("Nice, you're not greedy, you win!")                                                                           exit(0)                                                                                                          # If large, then be mean                                                                                             else:                                                                                                                    dead("You greedy bastard!")                                                                                                                                                                                                       # Finding bear room                                                                                                  def bear_room():                                                                                                         print("There is a bear here.")                                                                                       print("The bear has a bunch of honey.")                                                                              print("The fat bear is in front of another door.")                                                                   print("How are you going to move the bear?")                                                                         # Note that bear status is currently unmoved                                                                         bear_moved = False                                                                                                                                                                                                                        # While statement here to keep the user playing until a choice with an effect is made.                               # Note that reaching dead() exits, breaking the loop (dead() also in gold_room())                                    while True:                                                                                                              choice = input("> ")                                                                                                                                                                                                                      if choice == "take honey":                                                                                               dead("The bear looks at you and then slaps your face off.")                                                      elif choice == "taunt bear" and not bear_moved:                                                                          print("The bear has moved from the door.")                                                                           print("You can go through it now.")                                                                                  bear_moved = True                                                                                                elif choice == "taunt bear" and bear_moved:
+            dead("The bear gets pissed off and chews your leg off.")
+        elif choice == "open door" and bear_moved:
+            gold_room()
+        else: print("I got no idea what that means.")
+
+def cthulhu_room():
+    print("Here you see the great evil Cthulhu.")
+    print("He, it, whatever stares at you and you go insane.")
+    print("Do you flee for your life or eat your head?")
+
+    choice = input("> ")
+
+    if "flee" in choice:
+        start()
+    elif "head" in choice:
+        dead("Well that was tasty!")
+    else:
+        cthulhu_room()
+
+def dead(why):
+    print(why, "Good job!")
+    exit(0)
+
+def start():
+    print("You are in a dark room.")
+    print("There is a door to your right and left.")
+    print("Which one do you take?")
+
+    choice = input("< ")
+
+    if choice == "left":
+        bear_room()
+    elif choice == "right":
+        cthulhu_room()
+    else:
+        dead("You stumble around the room until you starve.")
+
+start()
+# 4.                                                                                                                  matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)      $ python ex35.py                                                                                                     You are in a dark room.
+There is a door to your right and left.
+Which one do you take?
+< left
+There is a bear here.
+The bear has a bunch of honey.
+The fat bear is in front of another door.
+How are you going to move the bear?
+> fight
+Down and out. You're ten-ply, bud. Good job!
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)      $ cat ex35.py                                                                                                        from sys import exit                                                                                                                                                                                                                      # Finding gold room                                                                                                  def gold_room():                                                                                                         print("This room is full of gold. How much do you take?")                                                                                                                                                                                 # Request input                                                                                                      choice = input("> ")                                                                                                 # If small amounts then be mean                                                                                      if "0" in choice or "1" in choice:                                                                                       how_much = int(choice)                                                                                           else:                                                                                                                    dead("Man, learn to type a number.")                                                                             # If fine amount then, well, fine                                                                                    if how_much < 50:                                                                                                        print("Nice, you're not greedy, you win!")                                                                           exit(0)                                                                                                          # If large, then be mean                                                                                             else:                                                                                                                    dead("You greedy bastard!")                                                                                                                                                                                                       # Finding bear room                                                                                                  def bear_room():                                                                                                         print("There is a bear here.")                                                                                       print("The bear has a bunch of honey.")                                                                              print("The fat bear is in front of another door.")                                                                   print("How are you going to move the bear?")                                                                         # Note that bear status is currently unmoved                                                                         bear_moved = False                                                                                                                                                                                                                        # While statement here to keep the user playing until a choice with an effect is made.                               # Note that reaching dead() exits, breaking the loop (dead() also in gold_room())                                    while True:                                                                                                              choice = input("> ")                                                                                                                                                                                                                      if choice == "take honey":                                                                                               dead("The bear looks at you and then slaps your face off.")                                                      elif choice == "taunt bear" and not bear_moved:                                                                          print("The bear has moved from the door.")                                                                           print("You can go through it now.")                                                                                  bear_moved = True                                                                                                elif choice == "taunt bear" and bear_moved:                                                                              dead("The bear gets pissed off and chews your leg off.")                                                         elif choice == "open door" and bear_moved:                                                                               gold_room()                                                                                                      elif "fight" in choice:                                                                                                  dead("Down and out. You're ten-ply, bud.")
+        else: print("I got no idea what that means.")
+
+def cthulhu_room():
+    print("Here you see the great evil Cthulhu.")
+    print("He, it, whatever stares at you and you go insane.")
+    print("Do you flee for your life or eat your head?")
+
+    choice = input("> ")
+
+    if "flee" in choice:
+        start()
+    elif "head" in choice:
+        dead("Well that was tasty!")
+    else:
+        dead("Cthulhu doesn't accept this option.")
+
+def dead(why):
+    print(why, "Good job!")
+    exit(0)
+
+def start():
+    print("You are in a dark room.")
+    print("There is a door to your right and left.")
+    print("Which one do you take?")
+
+    choice = input("< ")
+
+    if choice == "left":
+        bear_room()
+    elif choice == "right":
+        cthulhu_room()
+    else:
+        dead("You stumble around the room until you starve.")
+
+start()
+
+# 5. not sure...
+
+# DESIGNING AND DEBUGGING (p.160)
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex36.py                                                                                    Welcome, traveler. Please tell me your name
+< Matt
+Ah, thank you, Matt. Are you prepared to face your destiny?
+< Yes
+In what town do you want to live: Carlin, Thais, or Venore?
+< Thais
+In Thais! And what profession have you chosen: Knight, Paladin, Sorcerer, or Druid?
+< Paladin
+A PALADIN! Are you sure? This decision is irreversible!
+< Yes
+So be it!
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat ex36.py
+from sys import exit
+
+def loading_screen():
+    print("Welcome, traveler. Please tell me your name")
+
+    traveler_name = input("< ")
+
+    print(f"Ah, thank you, {traveler_name}. Are you prepared to face your destiny?")
+
+    destiny = input("< ")
+
+    # Two ways to skin a cat:
+    # if (destiny == "no" or destiny == "No"):
+    if (("no" in destiny) or ("No" in destiny)):
+        print("Come back when you have thought this through.")
+    elif (destiny == "yes" or destiny == "Yes"):
+        print("In what town do you want to live: Carlin, Thais, or Venore?")
+        town = input("< ")
+
+        profession_text = vocation_screen(town)
+
+        if "Knight" in profession_text:
+            profession_choice = "knight"
+            print("A KNIGHT! Are you sure? This decision is irreversible!")
+        elif "Paladin" in profession_text:
+            profession_choice = "paladin"
+            print("A PALADIN! Are you sure? This decision is irreversible!")
+        elif "Sorcerer" in profession_text:
+            profession_choice = "sorcerer"
+            print("A SORCERER! Are you sure? This decision is irreversible!")
+        elif "Druid" in profession_text:
+            profession_choice = "druid"
+            print("A DRUID! Are you sure? This decision is irreversible!")
+        else:
+            print("...")
+            print("I'm a pedant; please use proper spelling and capitalization.")
+            vocation_screen(town)
+
+        you_sure = input("< ")
+
+        if "yes" or "Yes" in you_sure:
+            print("So be it!")
+        else:
+            print("Come back when you have thought this through.")
+    else:
+        print("What?")
+
+
+def vocation_screen(town):
+    print(f"In {town}! And what profession have you chosen: Knight, Paladin, Sorcerer, or Druid?")
+
+    profession_response = input("< ")
+
+    return profession_response
+
+loading_screen()
+
+
+# DOING THINGS TO LISTS
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex38.py
+Wait there are not 10 things in that list. Let's fix that.
+Adding:  Boy
+There are 7 items now.
+Adding:  Girl
+There are 8 items now.
+Adding:  Banana
+There are 9 items now.
+Adding:  Corn
+There are 10 items now.
+There we go:  ['Apples', 'Oranges', 'Crows', 'Telephone', 'Light', 'Sugar', 'Boy', 'Girl', 'Banana', 'Corn']
+Let's do some things with stuff.
+Oranges
+Corn
+Corn
+Apples Oranges Crows Telephone Light Sugar Boy Girl Banana
+Telephone#Light
+
+# Study Drills
+# 6.matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat ex38.py
+ten_things = "Apples Oranges Crows Telephone Light Sugar"
+
+print("Wait there are not 10 things in that list. Let's fix that.")
+
+stuff = ten_things.split(" ")
+more_stuff = ["Day", "Night", "Song", "Frisbee", "Corn", "Banana", "Girl", "Boy"]
+
+while len(stuff) != 10:
+    next_one = more_stuff.pop()
+    print("Adding: ", next_one)
+    stuff.append(next_one)
+    print(f"There are {len(stuff)} items now.")
+
+print("There we go: ", stuff)
+
+print("Let's do some things with stuff.")
+
+print(stuff[1])
+print(stuff[-1]) # Whoa! fancy
+print(stuff.pop())
+print(" ".join(stuff)) # What? cool!
+print("#".join(stuff[3:5])) # Super stellar
+
+
+print("Now for another list or two of my making:")
+
+ten_things_irl = ["spider plant", "laptop", "sticky notes", "paper", "picture frame", "books", "pencil", "shoes", "cup", "whiteboard"]
+
+# Don't need to reassign here...it automatically gets added on.
+ten_things_irl.insert(0, "empty box")
+
+print(ten_things_irl)
+
+# Don't need to reassign here...it automatically gets added on.
+ten_things_irl.reverse()
+
+print(ten_things_irl)
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex38.py
+Wait there are not 10 things in that list. Let's fix that.
+Adding:  Boy
+There are 7 items now.
+Adding:  Girl
+There are 8 items now.
+Adding:  Banana
+There are 9 items now.
+Adding:  Corn
+There are 10 items now.
+There we go:  ['Apples', 'Oranges', 'Crows', 'Telephone', 'Light', 'Sugar', 'Boy', 'Girl', 'Banana', 'Corn']
+Let's do some things with stuff.
+Oranges
+Corn
+Corn
+Apples Oranges Crows Telephone Light Sugar Boy Girl Banana
+Telephone#Light
+Now for another list or two of my making:
+['empty box', 'spider plant', 'laptop', 'sticky notes', 'paper', 'picture frame', 'books', 'pencil', 'shoes', 'cup', 'whiteboard']
+['whiteboard', 'cup', 'shoes', 'pencil', 'books', 'picture frame', 'paper', 'sticky notes', 'laptop', 'spider plant', 'empty box']
+
+# DICTIONARIES, OH LOVELY DICTIONARIES (p. 174)
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python
+Python 3.7.0 (default, Jun 28 2018, 08:04:48) [MSC v.1912 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> things = ["a", "b", "c", "d"]
+>>> print(things[1])
+b
+>>> things[1] = "z"
+>>> print(things[1])
+z
+>>> things
+['a', 'z', 'c', 'd']
+>>> stuff = {"name": "Zed", "age": 39, "height": 6 * 12 + 2}
+>>> print(stuff["name"])
+Zed
+>>> print(stuff["age"])
+39
+>>> print(stuff["height"])
+74
+>>> stuff["city"] = "SF"
+>>> print(stuff["city"])
+SF
+>>> stuff
+{'name': 'Zed', 'age': 39, 'height': 74, 'city': 'SF'}
+>>> print(stuff)
+{'name': 'Zed', 'age': 39, 'height': 74, 'city': 'SF'}
+>>> stuff[1] = "Wow"
+>>> stuff[2] = "Neato"
+>>> print(stuff[1])
+Wow
+>>> print(stuff[2])
+Neato
+>>> stuff
+{'name': 'Zed', 'age': 39, 'height': 74, 'city': 'SF', 1: 'Wow', 2: 'Neato'}
+>>> stuff.pop("city")
+'SF'
+>>> stuff.pop(1)
+'Wow'
+>>> stuff.pop(2)
+'Neato'
+>>> stuff
+{'name': 'Zed', 'age': 39, 'height': 74}
+>>>
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex39.py
+----------
+NY State has:  New York
+OR State has:  Portland
+----------
+Michigan's abbreviation is:  MI
+Florida's abbreviation is:  FL
+----------
+Michigan has:  Detroit
+Florida has:  Jacksonville
+----------
+Oregon is abbreviated OR
+Florida is abbreviated FL
+California is abbreviated CA
+New York is abbreviated NY
+Michigan is abbreviated MI
+----------
+CA has the city San Franscisco
+MI has the city Detroit
+FL has the city Jacksonville
+NY has the city New York
+OR has the city Portland
+----------
+Oregon state is abbreviated OR
+and has the city Portland
+Florida state is abbreviated FL
+and has the city Jacksonville
+California state is abbreviated CA
+and has the city San Franscisco
+New York state is abbreviated NY
+and has the city New York
+Michigan state is abbreviated MI
+and has the city Detroit
+----------
+Sorry, no Texas.
+The city for the state 'TX' is: Does not exist
+
+# Study Drills
+# 1. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat ex39_study_drills.py                                                                          # Create a mapping of counties to abbreviations
+counties = {
+  "Asotin": "AS",
+  "Whitman": "WT",
+  "Garfield": "GA",
+  "Columbia": "CU"
+}
+
+# Create a basic set of counties and some cities in them
+cities = {
+  "WT": "Pullman",
+  "GA": "Pomeroy",
+  "CU": "Dayton"
+}
+
+# Add some more cities
+cities["AS"] = "Clarkston"
+
+# Print out some cities
+print("-" * 10)
+print("Asotin has: ", cities["AS"])
+print("Whitman has: ", cities["WT"])
+
+# Print some counties
+print("-" * 10)
+print("Whitman's abbreviation is: ", counties["Whitman"])
+print("Garfield's abbreviation is: ", counties["Garfield"])
+
+# Do it by using the county then cities dict
+print("-" * 10)
+print("Whitman has: ", cities[counties["Whitman"]])
+print("Columbia has: ", cities[counties["Columbia"]])
+
+# Print every state abbreviation
+print("-" * 10)
+for county, abbrev in list(counties.items()):
+    print(f"{county} is abbreviated {abbrev}")
+
+# Print every city in state
+print("-" * 10)
+for abbrev, city in list(cities.items()):
+    print(f"{abbrev} has the city {city}")
+
+# Now do both at the same time
+print("-" * 10)
+for county, abbrev in list(counties.items()):
+    print(f"{county} county is abbreviated {abbrev}")
+    print(f"and has city {cities[abbrev]}")
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex39_study_drills.py
+----------
+Asotin has:  Clarkston
+Whitman has:  Pullman
+----------
+Whitman's abbreviation is:  WT
+Garfield's abbreviation is:  GA
+----------
+Whitman has:  Pullman
+Columbia has:  Dayton
+----------
+Asotin is abbreviated AS
+Whitman is abbreviated WT
+Garfield is abbreviated GA
+Columbia is abbreviated CU
+----------
+WT has the city Pullman
+GA has the city Pomeroy
+CU has the city Dayton
+AS has the city Clarkston
+----------
+Asotin county is abbreviated AS
+and has city Clarkston
+Whitman county is abbreviated WT
+and has city Pullman
+Garfield county is abbreviated GA
+and has city Pomeroy
+Columbia county is abbreviated CU
+and has city Dayton
+
+# 2. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat ex39_study_drills.py                                                                          # Create a mapping of counties to abbreviations
+counties = {
+  "Asotin": "AS",
+  "Whitman": "WT",
+  "Garfield": "GA",
+  "Columbia": "CU"
+}
+
+# Create a basic set of counties and some cities in them
+cities = {
+  "WT": "Pullman",
+  "GA": "Pomeroy",
+  "CU": "Dayton"
+}
+
+# Add some more cities
+cities["AS"] = "Clarkston"
+
+# Print out some cities
+print("-" * 10)
+print("Asotin has: ", cities["AS"])
+print("Whitman has: ", cities["WT"])
+
+# Print some counties
+print("-" * 10)
+print("Whitman's abbreviation is: ", counties["Whitman"])
+print("Garfield's abbreviation is: ", counties["Garfield"])
+
+# Do it by using the county then cities dict
+print("-" * 10)
+print("Whitman has: ", cities[counties["Whitman"]])
+print("Columbia has: ", cities[counties["Columbia"]])
+
+# Print every state abbreviation
+print("-" * 10)
+for county, abbrev in list(counties.items()):
+    print(f"{county} is abbreviated {abbrev}")
+
+# Print every city in state
+print("-" * 10)
+for abbrev, city in list(cities.items()):
+    print(f"{abbrev} has the city {city}")
+
+# Now do both at the same time
+print("-" * 10)
+for county, abbrev in list(counties.items()):
+    print(f"{county} county is abbreviated {abbrev}")
+    print(f"and has city {cities[abbrev]}")
+
+
+print("Now, for some other stuff:")
+
+# Dictionaries as lists
+print(list(counties))
+print(list(cities))
+
+# A loop over two dictionaries simultaneously
+for a, b in zip(counties, cities):
+    print(f"{a} contains {b}")
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex39_study_drills.py
+----------
+Asotin has:  Clarkston
+Whitman has:  Pullman
+----------
+Whitman's abbreviation is:  WT
+Garfield's abbreviation is:  GA
+----------
+Whitman has:  Pullman
+Columbia has:  Dayton
+----------
+Asotin is abbreviated AS
+Whitman is abbreviated WT
+Garfield is abbreviated GA
+Columbia is abbreviated CU
+----------
+WT has the city Pullman
+GA has the city Pomeroy
+CU has the city Dayton
+AS has the city Clarkston
+----------
+Asotin county is abbreviated AS
+and has city Clarkston
+Whitman county is abbreviated WT
+and has city Pullman
+Garfield county is abbreviated GA
+and has city Pomeroy
+Columbia county is abbreviated CU
+and has city Dayton
+Now, for some other stuff:
+['Asotin', 'Whitman', 'Garfield', 'Columbia']
+['WT', 'GA', 'CU', 'AS']
+Asotin contains WT
+Whitman contains GA
+Garfield contains CU
+Columbia contains AS
+
+# 3. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat ex39_study_drills.py
+# Create a mapping of counties to abbreviations
+counties = {
+  "Asotin": "AS",
+  "Whitman": "WT",
+  "Garfield": "GA",
+  "Columbia": "CU"
+}
+
+# Create a basic set of counties and some cities in them
+cities = {
+  "WT": "Pullman",
+  "GA": "Pomeroy",
+  "CU": "Dayton"
+}
+
+# Add some more cities
+cities["AS"] = "Clarkston"
+
+# Print out some cities
+print("-" * 10)
+print("Asotin has: ", cities["AS"])
+print("Whitman has: ", cities["WT"])
+
+# Print some counties
+print("-" * 10)
+print("Whitman's abbreviation is: ", counties["Whitman"])
+print("Garfield's abbreviation is: ", counties["Garfield"])
+
+# Do it by using the county then cities dict
+print("-" * 10)
+print("Whitman has: ", cities[counties["Whitman"]])
+print("Columbia has: ", cities[counties["Columbia"]])
+
+# Print every state abbreviation
+print("-" * 10)
+for county, abbrev in list(counties.items()):
+    print(f"{county} is abbreviated {abbrev}")
+
+# Print every city in state
+print("-" * 10)
+for abbrev, city in list(cities.items()):
+    print(f"{abbrev} has the city {city}")
+
+# Now do both at the same time
+print("-" * 10)
+for county, abbrev in list(counties.items()):
+    print(f"{county} county is abbreviated {abbrev}")
+    print(f"and has city {cities[abbrev]}")
+
+
+print("Now, for some other stuff:")
+
+# Dictionaries as lists
+print(list(counties))
+print(list(cities))
+
+# A loop over two dictionaries simultaneously
+for a, b in zip(counties, cities):
+    print(f"{a} contains {b}")
+
+# Dictionary wants something named 1 I believe, not index 1:
+print(counties[1])
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex39_study_drills.py
+----------
+Asotin has:  Clarkston
+Whitman has:  Pullman
+----------
+Whitman's abbreviation is:  WT
+Garfield's abbreviation is:  GA
+----------
+Whitman has:  Pullman
+Columbia has:  Dayton
+----------
+Asotin is abbreviated AS
+Whitman is abbreviated WT
+Garfield is abbreviated GA
+Columbia is abbreviated CU
+----------
+WT has the city Pullman
+GA has the city Pomeroy
+CU has the city Dayton
+AS has the city Clarkston
+----------
+Asotin county is abbreviated AS
+and has city Clarkston
+Whitman county is abbreviated WT
+and has city Pullman
+Garfield county is abbreviated GA
+and has city Pomeroy
+Columbia county is abbreviated CU
+and has city Dayton
+Now, for some other stuff:
+['Asotin', 'Whitman', 'Garfield', 'Columbia']
+['WT', 'GA', 'CU', 'AS']
+Asotin contains WT
+Whitman contains GA
+Garfield contains CU
+Columbia contains AS
+Traceback (most recent call last):
+  File "ex39_study_drills.py", line 62, in <module>
+    print(counties[1])
+KeyError: 1
+
+# MODULES, CLASSES, AND OBJECTS
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex40.py
+Happy birthday to you
+I don't want to get sued
+So I'll stop right there
+They rally around tha family
+With pockets full of shells
+
+# Study Drills
+# 1. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat ex40.py                                                                                       class Song(object):
+
+    def __init__(self, lyrics):
+        self.lyrics = lyrics
+
+    def sing_me_a_song(self):
+        for line in self.lyrics:
+            print(line)
+
+happy_bday = Song(["Happy birthday to you",
+"I don't want to get sued",
+"So I'll stop right there"])
+
+bulls_on_parade = Song(["They rally around tha family",
+"With pockets full of shells"])
+
+jingle_bells = Song(["Jingle bells", "Jingle bells", "Jingle all the way"])
+
+happy_bday.sing_me_a_song()
+
+bulls_on_parade.sing_me_a_song()
+
+jingle_bells.sing_me_a_song()
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex40.py
+Happy birthday to you
+I don't want to get sued
+So I'll stop right there
+They rally around tha family
+With pockets full of shells
+Jingle bells
+Jingle bells
+Jingle all the way
+
+# 2. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat ex40.py
+class Song(object):
+
+    def __init__(self, lyrics):
+        self.lyrics = lyrics
+
+    def sing_me_a_song(self):
+        for line in self.lyrics:
+            print(line)
+
+happy_bday = Song(["Happy birthday to you",
+"I don't want to get sued",
+"So I'll stop right there"])
+
+bulls_on_parade = Song(["They rally around tha family",
+"With pockets full of shells"])
+
+jingle_bells = ["Jingle bells", "Jingle bells", "Jingle all the way"]
+
+happy_bday.sing_me_a_song()
+
+bulls_on_parade.sing_me_a_song()
+
+Song(jingle_bells).sing_me_a_song()
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex40.py
+Happy birthday to you
+I don't want to get sued
+So I'll stop right there
+They rally around tha family
+With pockets full of shells
+Jingle bells
+Jingle bells
+Jingle all the way
+
+# 3. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ cat ex40.py
+class Song(object):
+
+    def __init__(self, lyrics):
+        self.lyrics = lyrics
+
+    def sing_me_a_song(self):
+        for line in self.lyrics:
+            print(line)
+
+happy_bday = Song(["Happy birthday to you",
+"I don't want to get sued",
+"So I'll stop right there"])
+
+bulls_on_parade = Song(["They rally around tha family",
+"With pockets full of shells"])
+
+jingle_bells = ["Jingle bells", "Jingle bells", "Jingle all the way"]
+
+happy_bday.sing_me_a_song()
+
+bulls_on_parade.sing_me_a_song()
+
+Song(jingle_bells).sing_me_a_song()
+
+print("-" * 10)
+
+back_in_black = ["Back in black"]
+
+Song(back_in_black).sing_me_a_song()
+
+
+Song(back_in_black.append("/n I hit the sack")).sing_me_a_song()
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_4 (master)
+$ python ex40.py
+Happy birthday to you
+I don't want to get sued
+So I'll stop right there
+They rally around tha family
+With pockets full of shells
+Jingle bells
+Jingle bells
+Jingle all the way
+----------
+Back in black
+Traceback (most recent call last):
+  File "ex40.py", line 32, in <module>
+    Song(back_in_black.append("/n I hit the sack")).sing_me_a_song()
+  File "ex40.py", line 7, in sing_me_a_song
+    for line in self.lyrics:
+TypeError: 'NoneType' object is not iterable
