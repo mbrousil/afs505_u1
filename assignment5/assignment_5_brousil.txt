@@ -1,0 +1,363 @@
+# Matthew Brousil Assignment 5 2020-01-10
+
+# Exercises #40-42 (pages 180-196).
+
+# MODULES, CLASSES, AND OBJECTS
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_5 (master)
+$ python ex40.py
+Happy birthday to you
+I don't want to get sued
+So I'll stop right there
+They rall around tha family
+With pockets full of shells
+
+# Study Drills
+# 1. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_5 (master)
+$ cat ex40.py
+class Song(object):
+
+    def __init__(self, lyrics):
+        self.lyrics = lyrics
+
+    def sing_me_a_song(self):
+        for line in self.lyrics:
+            print(line)
+
+
+happy_bday = Song(["Happy birthday to you", "I don't want to get sued", "So I'll stop right there"])
+
+bulls_on_parade = Song(["They rally around tha family", "With pockets full of shells"])
+
+happy_bday.sing_me_a_song()
+
+bulls_on_parade.sing_me_a_song()
+
+print("And now for a new song")
+
+kgatlw = Song(["Nonagon infinity opens the door", "Nonagon infinity opens the door", "Wait for the answer to open the door"])
+
+kgatlw.sing_me_a_song()
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_5 (master)
+$ python ex40.py
+Happy birthday to you
+I don't want to get sued
+So I'll stop right there
+They rally around tha family
+With pockets full of shells
+And now for a new song
+Nonagon infinity opens the door
+Nonagon infinity opens the door
+Wait for the answer to open the door
+
+# 2. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_5 (master)
+$ cat ex40.py
+class Song(object):
+
+    def __init__(self, lyrics):
+        self.lyrics = lyrics
+
+    def sing_me_a_song(self):
+        for line in self.lyrics:
+            print(line)
+
+
+
+kgatlw = ["Nonagon infinity opens the door", "Nonagon infinity opens the door", "Wait for the answer to open the door"]
+
+the_song = Song(kgatlw)
+
+the_song.sing_me_a_song()
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_5 (master)
+$ python ex40.py
+Nonagon infinity opens the door
+Nonagon infinity opens the door
+Wait for the answer to open the door
+
+# 3.
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_5 (master)
+$ cat ex40.py
+class Song(object):
+
+    def __init__(self, lyrics):
+        self.lyrics = lyrics
+
+    def sing_me_a_song(self):
+        for line in self.lyrics:
+            print(line)
+
+
+
+kgatlw = ["Nonagon infinity opens the door", "Nonagon infinity opens the door", "Wait for the answer to open the door"]
+
+# the_song = Song(kgatlw)
+#
+# the_song.sing_me_a_song()
+
+Song.sing_me_a_song(Song(kgatlw))
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_5 (master)
+$ python ex40.py
+Nonagon infinity opens the door
+Nonagon infinity opens the door
+Wait for the answer to open the door
+
+
+# LEARNING TO SPEAK OBJECT ORIENTED
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_5 (master)
+$ python ex41.py
+class Brass(object):
+        def __init__(self, branch)
+> class Brass has-a __init__ that takes self and branch parameters
+ANSWER: class Brass has-a __init__ that takes self and branch params.
+
+
+cover.camp = 'attempt'
+> From cover get the camp attribute and set it to attempt
+ANSWER: From cover get the camp attribute and set it to 'attempt'.
+
+
+class Beginner(Car):
+> Make a class named Beginner that is-a Car
+ANSWER: Make a class named Beginner that is-a Car.
+
+
+Traceback (most recent call last):
+  File "ex41.py", line 75, in <module>
+    question, answer = convert(snippet, phrase)
+  File "ex41.py", line 44, in convert
+    param_names.appent(", ".join(random.sample(WORDS, param_count)))
+AttributeError: 'list' object has no attribute 'appent'
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_5 (master)
+$ python ex41.py english
+From brass get the bubble attribute and set it to 'cheese'.
+> Brass.bubble = "cheese"
+ANSWER: brass.bubble = 'cheese'
+
+
+Set dinosaurs to an instance of class Drop.
+> dinosaurs = Drop()
+ANSWER: dinosaurs = Drop()
+
+
+class Current has-a __init__ that takes self and cable params.
+> class Current(object): def __init__(self, cable)
+ANSWER: class Current(object):
+        def __init__(self, cable)
+
+
+Make a class named Beam that is-a Achiever.
+> class Beam(Achiever)
+ANSWER: class Beam(Achiever):
+
+
+From decision get the boy functoin, call it with params self, dirt, cakes.
+> Traceback (most recent call last):
+  File "ex41.py", line 80, in <module>
+    input("> ")
+KeyboardInterrupt
+
+
+# IS-A, HAS-A, OBJECTS, AND CLASSES
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_5 (master)
+$ cat ex42.py
+# Animal is-a object (yes, sort of confusing) look at the extra credit
+class Animal(object):
+    def make_noise(self):
+            print("???")
+
+Animal.make_noise("test")
+
+# ??
+class Dog(Animal):
+
+    def __init__(self, name):
+        # ??
+        self.name = name
+
+    def make_noise(self):
+            print("bark")
+
+Dog.make_noise("Fred")
+
+# ??
+class Cat(Animal):
+
+    def __init__(self, name):
+        # ??
+        self.name = name
+    def make_noise(self):
+            print("meow")
+
+# ??
+class Person(object):
+
+    def __init__(self, name):
+        # ??
+        self.name = name
+
+        # Person has-a pet of some kind
+        self.pet = None
+    def make_noise(self):
+            print("I like R more than Python")
+
+# ??
+class Employee(Person):
+
+    def __init__(self, name, salary):
+        # ?? hmm what is this strange magic?
+        super(Employee, self).__init__(name)
+        # ??
+        self.salary = salary
+    def make_noise(self):
+            print("Listen, are you gonna have those TPS reports for us this afternoon?")
+
+# ??
+class Fish(object):
+    pass
+
+# ??
+class Salmon(Fish):
+    pass
+
+# ??
+class Halibut(Fish):
+    pass
+
+# Rover is-a Dog
+rover = Dog("Rover")
+
+# ??
+satan = Cat("Satan")
+
+# ??
+mary = Person("Mary")
+
+# ??
+mary.pet = satan
+
+# ??
+frank = Employee("Frank", 120000)
+
+# ??
+frank.pet = rover
+
+# ??
+flipper = Fish()
+
+# ??
+crouse = Salmon()
+
+# ??
+harry = Halibut()
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_5 (master)
+$ python ex42.py
+???
+bark
+
+# Study Drills
+# 5. matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_5 (master)
+$ cat ex42.py
+# Animal is-a object (yes, sort of confusing) look at the extra credit
+class Animal(object):
+    def make_noise(self):
+            print("???")
+
+Animal.make_noise("test")
+
+# ??
+class Dog(Animal):
+
+    def __init__(self, name):
+        # ??
+        self.name = name
+
+    def make_noise(self):
+            print("bark")
+
+Dog.make_noise("Fred")
+
+# ??
+class Cat(Animal):
+
+    def __init__(self, name):
+        # ??
+        self.name = name
+    def make_noise(self):
+            print("meow")
+
+# ??
+class Person(object):
+
+    def __init__(self, name):
+        # ??
+        self.name = name
+
+        # Person has-a pet of some kind
+        self.pet = None
+    def make_noise(self):
+            print("I like R more than Python")
+
+# ??
+class Employee(Person):
+
+    def __init__(self, name, salary):
+        # ?? hmm what is this strange magic?
+        super(Employee, self).__init__(name)
+        self.info = {"salary":salary, "name": name}
+        # ??
+        self.salary = salary
+    def make_noise(self):
+            print("Listen, are you gonna have those TPS reports for us this afternoon?")
+
+peter = Employee("Peter", 150000)
+print(peter.info)
+
+# ??
+class Fish(object):
+    pass
+
+# ??
+class Salmon(Fish):
+    pass
+
+# ??
+class Halibut(Fish):
+    pass
+
+# Rover is-a Dog
+rover = Dog("Rover")
+
+# ??
+satan = Cat("Satan")
+
+# ??
+mary = Person("Mary")
+
+# ??
+mary.pet = satan
+
+# ??
+frank = Employee("Frank", 120000)
+
+# ??
+frank.pet = rover
+
+# ??
+flipper = Fish()
+
+# ??
+crouse = Salmon()
+
+# ??
+harry = Halibut()
+
+matthew.brousil@wrc-pccr-05 MINGW64 ~/Documents/afs_505_personal/unit_1_intro/assignments/assignment_5 (master)
+$ python ex42.py
+???
+bark
+{'salary': 150000, 'name': 'Peter'}
+  
